@@ -89,3 +89,24 @@ Laravel Shop 功能如下：
 
 
 ![8](https://user-images.githubusercontent.com/324764/41385035-c414fc84-6fab-11e8-82f6-ff50246a4853.png)
+
+
+#### 操作步骤 
+
+
+yarn install 若失败则删除node_modules文件夹再运行该命令
+
+
+1:composer install 
+2:创建.env文件
+2 key genration  
+2 创建数据库并配置.env 数据库选项
+2 配置验证邮箱
+2 AppServiceProvider 设置编码最大长度 Schema::defaultStringLength(191);
+3:php artisan migrate 
+4:php artisan db:seed   
+5 yarn install 
+6:卸载node sass  npm uninstall --save node-sass  ，重装node sass npm install --save node-sass  
+7:配置邮箱 6验证邮箱（线上直接验证，线下改数据库） 
+
+

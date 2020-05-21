@@ -54,6 +54,12 @@ class ProductsController extends Controller
             ->body($this->form());
     }
 
+    public function favor(Content $content)
+    {
+        return response()->json(array("code"=>1));
+    }
+
+
     /**
      * Make a grid builder.
      *
